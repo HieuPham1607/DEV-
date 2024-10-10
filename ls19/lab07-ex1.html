@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành 02</title>
+    <style>
+        .button button {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="zone1">
+        <h1>Chọn màu chữ</h1>
+        <div class="button">
+            <button value="red">Đỏ</button>
+            <button value="green">Xanh</button>
+            <button value="Yellow">Vàng</button>
+            <button value="gray">Ghi</button>
+            <button value="Purple">Tím</button>
+        </div>
+        <div class="noi-dung">
+            <p>
+                Lập trình web với php và MySQL
+            </p>
+        </div>
+
+        <button id="reset">Reset</button>
+    </section>
+
+    <!-- Nhúng Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- code js -->
+    <script>
+        $(document).ready(function () {
+            //test jquery
+            //alert('Xin chào')
+
+            //Tô màu cho các button tương ứng
+            $('.button > button').each(function () {
+                //Lấy thuộc tính value của button
+                let valColor = $(this).attr("value");
+                //Tô màu nền (valColor) cho button
+                $(this).css({
+                    "background": valColor,
+                    'border': '1px solid ' + valColor,
+                    'padding': '.15rem 1rem'
+                });
+            });
+
+            //Tô màu chữ nội dung
+            $('.button button').click(function () {
+                //lấy màu từ nút
+                let color = $(this).attr('value');
+                // set color cho nội dung
+                $('.noi-dung p').css({
+                    'color': color
+                });
+            });
+            //reset
+            $("#reset").click(function () {
+                $('.noi-dung p').css({
+                    'color': 'black',
+                })
+            });
+            //hoặc
+            $('#zone1 > button').click(function () {
+                $('.noi-dung p').css({
+                    'color': 'black',
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

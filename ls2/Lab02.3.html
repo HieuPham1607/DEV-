@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+</head>
+<style>
+    td {
+        vertical-align: top;
+    }
+</style>
+
+<body>
+    <form action="" method="post">
+        <table width="600px">
+            <caption>
+                <h3>Đăng ký thành viên</h3>
+            </caption>
+            <tr>
+                <td width="150px">Họ và Tên</td>
+                <td><input type="text" name="fullName" id="fullName" size="30" /></td>
+            </tr>
+            <tr>
+                <td width="150px">Tên đăng nhập</td>
+                <td><input type="text" name="userName" id="userName" size="30" /></td>
+            </tr>
+            <tr>
+                <td width="150px">Mật khẩu</td>
+                <td><input type="text" name="password" id="password" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Ảnh đại diện</td>
+                <td><input type="file" name="avata" id="avata" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Thư điện tử</td>
+                <td><input type="email" name="email" id="email" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="1" />
+                    <label for="male">Nam</label>
+                    <input type="radio" name="gender" id="female" value="0" />
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" name="bongda" id="bongda" />
+                    <label for="bongda">Bóng đá</label>
+                    <input type="checkbox" name="bongchay" id="bongchay" />
+                    <label for="bongchay">Bóng chày</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Quê quán</td>
+                <td>
+                    <select name="province" id="province">
+                        <option value="">---Chọn Tỉnh---</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Hải Phòng</option>
+                        <option value="">Quảng Ninh</option>
+                        <option value="">Tuyên Quang</option>
+                        <option value="">Hà Giang</option>
+                        <option value="">Lạng Sơn</option>
+                        <option value="">Huế</option>
+                        <option value="">Quảng Nam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" name="address" id="address" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" name="mobile" id="mobale" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Mổ tả ngắn</td>
+                <td>
+                    <textarea name="description" id="description" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="register" value="Đăng ký" />
+                    <input type="reset" value="làm lại" name="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

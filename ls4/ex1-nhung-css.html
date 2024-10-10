@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng CSS vào HTML</title>
+</head>
+
+<body>
+    <section id>
+        <h1>Nhúng CSS vào HTML</h1>
+        <hr>
+    </section>
+    <!-- style inline -->
+    <section id="style-inline">
+        <h2>Nhúng css trực tiếp vào HTML thông qua thuộc tính style</h2>
+        <p style="background-color: green; color : yellow">
+            kjjc bdjbcjdbcjdbcjbdcjbdjcbjdcbjdbcjdbjcdbjdbcjdcđjcbjd
+        </p>
+    </section>
+    <!-- tag style -->
+    <section id="tag-style">
+        <h2>Viết các quy tắc css trong phần tử style của trang HTML</h2>
+        <pre>
+            nên viết style trong head
+        </pre>
+        <hr>
+        <style>
+            /*bộ chọn phon tử*/
+            pre {
+                background-color: gray;
+            }
+
+            /*bộ chọn id*/
+            #tag-style {
+                margin: 1rem;
+                padding: 1rem;
+                border: 1px solid red;
+            }
+        </style>
+    </section>
+    <!-- bộ chọn kết nối file css -->
+    <section id="external-style">
+        <h2>sử dụng file css thông qua link</h2>
+        <pre>cú pháp:
+            <!-- <link rel="stylesheet" href="css/style.css">  -->
+        </pre>
+        <link rel="stylesheet" href="css/style.css">
+    </section>
+</body>
+
+</html>

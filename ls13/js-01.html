@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng javascripts vào html</title>
+    <script>
+        function clickHere() {
+            document.body.style.backgroundColor = 'cyan';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Nhúng javascripts vào html</h1>
+    </header>
+    <section id="zone1">
+        <h2>Nhứng trực tiếp vào thuộc tính sự kiện của phần tử html</h2>
+        <button onclick="alert('Bạn vừa click vào buttom')">Click</button>
+    </section>
+    <section id="zone2">
+        <h2>Nhứng scrip (js) vào html thông qua thẻ scrip (head)</h2>
+        <button onclick="clickHere()">Tô màu</button>
+    </section>
+    <section id="zone3">
+        <h2>Nhúng file javascirpts</h2>
+        <button onclick="doiMau()">Đổi màu</button>
+    </section>
+
+    <!-- nhúng js -->
+    <script src="javascripts/js-01.js"></script>
+</body>
+
+</html>

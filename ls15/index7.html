@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mothod Object</h1>
+    <p>Hiển thị một biến</p>
+    <p id="demo"></p>
+    <p>Đối tượng có nhiều giá trị </p>
+    <p id="demo1"></p>
+    <p>Tạo đối tượng trống rồi thêm 4 thuộc tính</p>
+    <p id="demo2"></p>
+    <p>Phương thức có hàm sát định trong hệ thông</p>
+    <p id="demo3"></p>
+
+    <script>
+        let car = "Mọt";
+        document.getElementById("demo").innerHTML = "Đi chơi bằng " + car;
+        const car1 = { type: "Vin", model: "V9", color: "blue" };
+        document.getElementById("demo1").innerHTML = "Đi chơi bằng " + car1.type + " Chức năng " + car1.model + " nó có màu " + car1.color + " nhe em nhé";
+
+        const person = {
+            firstName: "Dan",
+            lastName: "Te",
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        person.name = "Dante";
+        person.firstName = "Dan";
+        person.lastName = "Te";
+        person.age = 1000;
+        person.address = "Hải Phòng Gốc cây";
+        person.gerder = "female";
+
+        delete person.name;
+        const x = person;
+        x.birth = 2003;
+
+
+        document.getElementById("demo2").innerHTML = "Tôi tên là " + person.name + + person.age + " Tuổi" + " Tôi là người " + person.address + " và tôi là " + person.gerder;
+        document.getElementById("demo3").innerHTML = "Tôi tên là " + person.fullName() + " Tôi sinh sinh năm " + x.birth;
+    </script>
+</body>
+
+</html>

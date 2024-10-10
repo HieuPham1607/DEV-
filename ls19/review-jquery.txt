@@ -1,0 +1,16 @@
+#labrary
+ -- local: Tải về project từ trang chủ: http://jquery.com/
+ -- api: (CDN, cloud,...): 
+    ---: nhúng vào phần head; khuyến nghị nên nhúng ở cuối trang html, trước thẻ đóng body
+
+
+#Syntax: 
+$(document).ready(function(){
+  -- các câu lệnh sử dụng với jquery
+
+  -- tương tác:
+  $(selector).action(...){...}
+      -- selector: html tag, #id, .class-name, css selector,...
+      -- Ví dụ :
+          $('#zone1').class
+});

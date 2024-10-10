@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding: 1.6rem;
+    display: flex;
+}
+#studentForm {
+    display: none;
+}
+.acction-btn {
+    margin-right: 5px;
+}
+.search-bar,
+.sort-bar,
+.search-btn {
+    margin-bottom: 1.2rem;
+}
+.sort-bar {
+    width: 11rem;
+}
+.control-row {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}

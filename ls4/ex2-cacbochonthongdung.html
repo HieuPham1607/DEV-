@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các bộ chọn thông dụng với css</title>
+    <style>
+        /* _Bộ chọn phần tử: Ví dụ: body, h1, section,... */
+        body {
+            background-color: aqua;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2, 5rem;
+        }
+
+        /* _Bộ chọn thuộc tính id: #zone1, #catalog,... */
+        #zone1 {
+            border: 5cqi solid blue;
+            background-color: #fff;
+            padding: 1rem;
+        }
+
+        /* _Bộ chọn class: .class-name, .container, .row, .item,... */
+        .container {
+            background-color: green;
+            margin: 1rem 2rem;
+            padding: 1rem;
+        }
+
+        .item {
+            color: yellow;
+        }
+
+        .btn {
+            border: 3px solid red;
+            border-radius: 3px;
+            padding: .5rem 1rem;
+            color: #fff;
+        }
+
+        .btn-red {
+            background-color: red;
+        }
+
+        .btn-green {
+            background-color: green;
+        }
+
+        /* _Bộ chọn giá trị thuộc tính: input[type='text'] {...} */
+
+        input[type='buttom'] {
+            font-family: fantasy;
+            font-size: 1, 5rem;
+        }
+
+        p.item {
+            font-size: 20px;
+        }
+
+        .sp-1 {
+            font-size: 2em;
+        }
+
+        .sp-2 {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Các bộ thông dụng với css</h1>
+        <hr>
+        <pre>
+            _Bộ chọn phần tử: Ví dụ: body, h1, section,...
+            _Bộ chọn thuộc tính id: #zone1, #catalog,...
+            _Bộ chọn class: .class-name, .container, .row, .item,...
+            _Bộ chọn giá trị thuộc tính: input[type='text'] {...}
+        </pre>
+    </section>
+    <section id="zone1">
+        <h2>_Bộ chọn thuộc tính id: #zone1, #catalog,...</h2>
+    </section>
+    <section id="zone2" class="container">
+        <h2>_Bộ chọn class: .class-name, .container, .row, .item,...</h2>
+        <p class="item">
+            shchhfhefjhjedhfjhfjhfjdhfjdhfjdhfjdhfjdhfjdhfjdhfjdfhjdhfkfhkdfhdfhefhkdfhkdfhdf
+            xjdchjdhfjdhfhdjfhjdhfjdhfjdhjfhjdfhdjhfjdhfjdhfdhfjdhfdh
+            dndfdhfjdhfjdf
+            <br>
+            <span class="sp-1">price:123.45</span>
+            <br>
+            <span class="sp-2">Old</span>
+        </p>
+        <input type="button" value="Button 1" class="btn btn-red">
+        <input type="button" value="Button 2" class="btn btn-green">
+        <input type="submit" value="login">
+    </section>
+</body>
+
+</html>

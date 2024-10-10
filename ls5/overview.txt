@@ -1,0 +1,11 @@
+Làm việc với css
+- nhúng css vào trạng thái html
++style inline: phạm vi sử dụng với thẻ html hiện tại
++tag style: Phạm vi sử dụng trên toàn bộ trạng thái html
++external style (file.css): phạm vi sử dụng trên toàn bộ side
+++ nhúng file css bằng thẻ link (hoặc import)
+
+- bộ chọn:
+_ bộ chọn phân tử : html, body, h1,...
++ bộ chọn id: #id (ví dụ như #zone1{...})
++

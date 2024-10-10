@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            background-color: aqua;
+        }
+
+        nav ul li {
+            border-right: 1px solid blue;
+        }
+
+        nav ul li:last-child {
+            border-right: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: .5rem 1rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Ẩn menu con */
+        nav li>a+ul {
+            display: none;
+            width: 18rem;
+            position: absolute;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        /* Hiện menu con */
+        nav>ul>li:hover>a+ul {
+            display: flex;
+            flex-direction: column;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        nav>ul>li {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav>ul>li:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        nav ul li:hover {
+            background-color: green;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+            <li>
+                <a href="#" title="Sản phẩm">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Lập trình Web PHP&MySQL</a></li>
+                    <li><a href="#">Lập trình Web Netcore</a></li>
+                    <li><a href="#">Lập trình Web java SpringBoot</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+            <li><a href="#" title="Hỗ trợ">Hỗ trợ</a></li>
+            <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
