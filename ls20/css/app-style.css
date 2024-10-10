@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    font-family: "Arial";
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+.bg-white {
+    background-color: #fff;
+    height: 400px;
+}
+.box-item {
+    border: 1px solid #f1f1f1;
+    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.34);
+}
+
+.img {
+    width: 5rem;
+}
+.img img {
+    width: 100%;
+}
+
+.gh-item button {
+    padding: 0 0.75rem;
+    border: 1px solid #cccc;
+}
+.gh-item input {
+    width: 35px;
+    border: 0;
+    border-top: 1px solid #cccc;
+    border-bottom: 1px solid #cccc;
+    text-align: center;
+}
+.gh-item input:focus {
+    outline: none;
+}
+
+#gioHang p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+.gh-item p span {
+    color: red;
+}
+.gh-item {
+    border-bottom: 1px solid #ccc;
+}
