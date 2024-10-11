@@ -44,9 +44,12 @@ body {
     margin: 0.25rem 0;
     font-size: 0.9rem;
 }
-.gh-item p span {
+.box-item p span {
     color: red;
 }
 .gh-item {
     border-bottom: 1px solid #ccc;
+}
+.gh-action button {
+    margin: 0.15rem 0;
 }
